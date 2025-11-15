@@ -11,9 +11,8 @@ EPOCHS = 50
 
 # **CRITICAL CHANGE:** NUM_CLASSES now represents the number of distinct animal responses 
 # humans are likely to give (e.g., Bat, Butterfly, Dog, Bear, Spider).
-NUM_CLASSES = 5 
-DATASET_PATH = 'path/to/your/inkblot_images_with_animal_labels/' 
-
+NUM_CLASSES = 10 
+DATASET_PATH = '/Users/axelreich/Desktop/cnn-rorschach-test/Rorschach_CNN_Project/data/animals-10'
 # --- 2. Data Preprocessing and Augmentation ---
 # NOTE: Augmentation may need to be limited for Rorschach images to preserve symmetry.
 train_datagen = ImageDataGenerator(
